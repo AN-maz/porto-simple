@@ -1,0 +1,14 @@
+[
+  {
+    "posisi": "Frontend Developer",
+    "perusahaan": "PT Contoh Digital",
+    "periode": "2022 - Sekarang",
+    "keterangan": "Bangun dashboard internal pakai React dan TypeScript. Turunkan waktu load 40%."
+  },
+  {
+    "posisi": "Web Developer Intern",
+    "perusahaan": "Startup Contoh",
+    "periode": "2021 - 2022",
+    "keterangan": "Bikin landing page dan komponen reusable. Kolaborasi dengan tim desain."
+  }
+]

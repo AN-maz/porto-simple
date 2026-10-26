@@ -1,0 +1,12 @@
+{
+  "nama": "Purwa",
+  "peran": "Frontend Developer",
+  "tagline": "Bikin antarmuka web yang bersih, cepat, dan gampang dipakai.",
+  "lokasi": "Jakarta, Indonesia",
+  "foto": "./public/hacktonUTB.jpeg",
+  "sosial": [
+    { "label": "GitHub", "url": "https://github.com/username" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/username" },
+    { "label": "Email", "url": "mailto:email@contoh.com" }
+  ]
+}

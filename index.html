@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio pribadi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#hero">Lewati ke konten</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#hero" aria-label="Beranda">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span data-bind="profil.nama">Nama Kamu</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="nav" aria-label="Navigasi utama">
+        <a href="#hero">Beranda</a>
+        <a href="#skill">Skill</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kontak" class="nav-cta">Hubungi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow" data-bind="profil.lokasi">Jakarta, Indonesia</p>
+          <h1 class="hero-title">
+            Halo, saya <span class="accent" data-bind="profil.nama">Nama Kamu</span>
+          </h1>
+          <p class="hero-role" data-bind="profil.peran">Frontend Developer</p>
+          <p class="hero-tagline" data-bind="profil.tagline">Tagline.</p>
+          <div class="hero-actions">
+            <a href="#kontak" class="btn btn-primary">Kirim Pesan</a>
+            <a href="#pengalaman" class="btn btn-ghost">Lihat Pengalaman</a>
+          </div>
+          <ul class="social-list" id="social-list" aria-label="Tautan sosial"></ul>
+        </div>
+        <div class="hero-photo">
+          <img id="foto" src="./public/Egi-sample.jpg" alt="Foto profil" width="480" height="480" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skill" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Kemampuan</p>
+          <h2>Skill</h2>
+        </header>
+        <ul class="skill-grid" id="skill-list"></ul>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="pendidikan" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Latar Belakang</p>
+          <h2>Pendidikan</h2>
+        </header>
+        <ol class="timeline" id="pendidikan-list"></ol>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN -->
+    <section id="pengalaman" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Karier</p>
+          <h2>Pengalaman</h2>
+        </header>
+        <ol class="timeline" id="pengalaman-list"></ol>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section section-alt">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow">Kontak</p>
+          <h2>Kirim Pesan</h2>
+          <p class="muted">Isi form di samping, saya balas secepatnya.</p>
+        </div>
+        <form id="contact-form" class="form" novalidate>
+          <div class="field">
+            <label for="nama">Nama</label>
+            <input id="nama" name="nama" type="text" required minlength="2" placeholder="Nama kamu" autocomplete="name" />
+            <p class="error" data-error-for="nama" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="email@contoh.com" autocomplete="email" />
+            <p class="error" data-error-for="email" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" required minlength="10" placeholder="Tulis pesan kamu"></textarea>
+            <p class="error" data-error-for="pesan" role="alert"></p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> <span data-bind="profil.nama">Nama Kamu</span>. Dibuat dengan HTML, CSS, JS.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[
+  { "nama": "HTML", "level": 95 },
+  { "nama": "CSS", "level": 90 },
+  { "nama": "JavaScript", "level": 85 },
+  { "nama": "React", "level": 78 },
+  { "nama": "Node.js", "level": 72 },
+  { "nama": "Figma", "level": 80 }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "institusi": "Universitas Contoh",
+    "jurusan": "S1 Teknik Informatika",
+    "periode": "2018 - 2022",
+    "keterangan": "Fokus rekayasa perangkat lunak. IPK 3.7."
+  },
+  {
+    "institusi": "SMK Negeri Contoh",
+    "jurusan": "Rekayasa Perangkat Lunak",
+    "periode": "2015 - 2018",
+    "keterangan": "Juara 2 lomba web design tingkat provinsi."
+  }
+]
